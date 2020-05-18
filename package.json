@@ -1,0 +1,30 @@
+{
+  "name": "cln_base",
+  "version": "2.9.8",
+  "description": "基于vue，nuxtjs，elementUI的前端框架",
+  "private": true,
+  "scripts": {
+    "bootstrap": "pxnpm i || cnpm i",
+    "dev": "yk dev",
+    "build": "yk build",
+    "start": "npm run bootstrap && npm run build && npm run start:server",
+    "start:sh": "npm run build && npm run start:server",
+    "start:pub": "npm run bootstrap && npm run start:server",
+    "start:server": "yk server start",
+    "stop": "yk server stop",
+    "pub": "npm run build && yk publish",
+    "restart": "npm run stop && npm run start:server",
+    "clean": "yk clean"
+  },
+  "engines": {
+    "node": ">=12.13.0"
+  },
+  "dependencies": {
+    "@rdc/sgp-ui": "1.0.0-12",
+    "yakuza1": "2.0.16-beta.10"
+  },
+  "devDependencies": {
+    "nuxt": "2.12.2",
+    "yakuza0": "2.9.13-beta.0"
+  }
+}
