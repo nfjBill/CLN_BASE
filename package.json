@@ -2,7 +2,6 @@
   "name": "cln_base",
   "version": "2.9.8",
   "description": "基于vue，nuxtjs，elementUI的前端框架",
-  "private": true,
   "scripts": {
     "bootstrap": "pxnpm i || cnpm i",
     "dev": "yk dev",
